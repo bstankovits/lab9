@@ -5,6 +5,7 @@ from text_tokenize import tokenize_sentences
 class Trie:
     def __init__(self, value = None, c = None, type_ = None):
         self.value = value
+        self.useless = 2
         if c is None:
             self.children = {}
         self.type = type_
